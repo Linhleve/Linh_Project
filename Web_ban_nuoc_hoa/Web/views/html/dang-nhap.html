@@ -1,0 +1,30 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<section class="title-bar">
+  <h1 class="title">Đăng nhập</h1>
+</section>
+
+<div class="login-container">
+  <div class="login-left">
+    <form class="login-form" method="POST" action="/tai-khoan/kiem-tra-dang-nhap">
+      <h1 class="login-title">Sign in to NLMM</h1>
+      <div class="social-icons">
+        <a href="#" class="social-circle">f</a>
+        <a href="#" class="social-circle">G+</a>
+        <a href="#" class="social-circle">in</a>
+      </div>
+      <p class="login-subtext">Hoặc đăng nhập bằng tài khoản:</p>
+      <label><input type="text" name="ten_tai_khoan" placeholder="Tên đăng nhập" class="login-input" required></label>
+      <label><input type="password" name="mat_khau" placeholder="Mật khẩu" class="login-input" required></label>
+
+      <button class="login-btn" type="submit">ĐĂNG NHẬP</button>
+      <p><a href="/quen-mat-khau" class="hover-red">Quên mật khẩu?</a></p>
+
+    </form>
+  </div>
+  <div class="login-right">
+    <p class="f28">Xin chào!</p>
+    <p class="f20">Hãy nhập thông tin cá nhân của bạn<br> để bắt đầu hành trình cùng chúng tôi</p>
+    <button id="goto-register-btn" class="signup-btn">ĐĂNG KÝ</button>
+  </div>
+</div>

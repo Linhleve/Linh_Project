@@ -1,0 +1,252 @@
+/* TaiKhoan_nv.css */
+
+.tai-khoan-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  margin-top: 150px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  border: 1px solid #82d1f0;
+  max-height: 800px;
+}
+
+.profile-header {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.avatar-circle {
+  width: 72px;
+  height: 72px;
+  background: #3b82f6; /* màu xanh */
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-name {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff; /* màu chữ trắng */
+}
+
+.profile-details {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.profile-detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.profile-detail-label {
+  color: #64748b; /* màu chữ nhạt cho label */
+}
+
+.profile-detail-value {
+  font-weight: 500;
+  text-align: right;
+}
+
+.actions-card {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.actions-button-1,
+.actions-button-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+  border: 1px solid #82d1f0;
+}
+
+.actions-button-1 {
+  background: #eff6ff; /* xanh nhạt */
+  color: #1d4ed8; /* xanh đậm chữ */
+}
+
+.actions-button-1:hover {
+  background: #3b85e7;
+  color: #1e293b;
+}
+
+.actions-button-2 {
+  background: #fef2f2; /* đỏ nhạt */
+  color: #dc2626; /* đỏ chữ */
+}
+
+.actions-button-2:hover {
+  background: #fee2e2;
+}
+
+
+
+
+
+.form_overlay_nv {
+  position: fixed;
+  inset: 0; /* phủ toàn màn hình */
+  background: rgba(0, 0, 0, 0.4); /* mờ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* nổi hơn nội dung chính */
+  animation: fadeIn 0.25s ease;
+}
+
+/* === Khung form === */
+.form_container_nv {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 32px;
+  min-width: 360px;
+  max-width: 400px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  animation: popup 0.3s ease;
+}
+
+/* Tiêu đề */
+.form_container_nv h4 {
+  margin-bottom: 4px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.form_container_nv p {
+  margin-top: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Ô nhập liệu */
+.form_input_nv {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input_nv label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.form_input_nv input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.form_input_nv input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.form_buttons_nv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa 2 nút */
+  margin-top: 20px;
+  width: 336px;
+}
+
+/* === Nút Thêm mới === */
+.form_buttons_nv .button_add button {
+  background: #2f78c7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: 256px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+
+.form_buttons_nv .button_add button:hover {
+  background: #3686e1;
+  transform: scale(1.03);
+}
+
+.form_buttons_nv .button_cancel_nv {
+  border-radius: 8px;
+}
+
+.form_buttons_nv .button_cancel_nv button {
+  background: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 70px;
+  transition: background 0.2s, transform 0.1s;
+  border: 1.5px solid #82d1f0;
+}
+
+.form_buttons_nv .button_cancel_nv button:hover {
+  background-color: #b3daff;
+  transform: scale(1.03);
+}
+
+/* === Hiệu ứng hiện form === */
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hiệu ứng nền mờ hiện dần */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

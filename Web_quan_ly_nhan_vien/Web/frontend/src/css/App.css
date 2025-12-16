@@ -1,0 +1,17 @@
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body chiếm toàn bộ màn hình */
+html, body {
+  width: 100%;
+  min-height: 100%; /* dùng min-height thay vì height */
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  overflow-x: hidden; /* tránh scroll ngang */
+}
+
+

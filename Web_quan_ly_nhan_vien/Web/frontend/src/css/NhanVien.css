@@ -1,0 +1,449 @@
+.content_container_nv {
+  background: #e8f7ff;
+  min-height: 100vh;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container_nv {
+  width: 80%;
+  margin-left: 150px;
+}
+
+.content_title {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #82d1f0;
+}
+
+.content_title_1 h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.content_title_1 p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.searchbox_nv {  
+  margin-left: auto;     
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  height: 36px; 
+} 
+
+.searchbox_nv input {
+  padding: 6px 10px;
+  border: 1px solid #82d1f0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+  width: 60%;
+  height: 36px;
+  margin: 0;
+}
+
+.button_view_hidden {
+  background: linear-gradient(90deg, #395f99, #30abca);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #82d1f0;
+  height: 36px;
+  color: #ffffff;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  border-radius: 6px;
+  box-shadow: none;
+  margin: 0;
+  padding: 14px 0px;
+  border: 1px solid #82d1f0;
+  border-radius: 12px;
+}
+
+.button_view_hidden:hover {
+  background: linear-gradient(90deg, #0066ff, #0056e0);
+  transform: translateY(-1px);
+}
+
+.showtable {
+  padding: 0 10px;
+  width: 50%;
+  text-align: center;
+  height: 36px;
+  margin: 0;
+}
+
+.showtable button {
+  background: linear-gradient(90deg, #395f99, #30abca);
+  display: flex;          
+  align-items: center;     
+  justify-content: center; 
+  border: 1px solid #82d1f0;
+  height: 36px;
+  justify-content: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+.showtable button:hover {
+  background: linear-gradient(90deg, #0066ff, #0056e0);
+  transform: translateY(-1px);
+}
+
+.content_title_nv {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 36px;
+  margin: 0;
+}
+
+.content_title_nv button {
+  background: linear-gradient(90deg, #395f99, #30abca);
+  color: #fff;
+  display: flex;          
+  align-items: center;   
+  justify-content: center; 
+  margin: 0;
+  height: 36px;
+}
+
+
+.content_title_2 button:hover {
+  background: linear-gradient(90deg, #0066ff, #0056e0);
+  transform: translateY(-1px);
+}
+
+.content_main {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #82d1f0;
+}
+
+.content_main_table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: visible; 
+}
+
+.content_main_table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* tất cả cột đều nhau */
+}
+
+.content_main_table th,
+.content_main_table td {
+  text-align: left;
+  padding: 5px 8px;
+  border-bottom: 1px solid #82d1f0;
+
+}
+
+/* Cột cuối cùng (Thao tác) */
+.content_main_table th:last-child,
+.content_main_table td:last-child {
+  text-align: right;
+}
+
+.content_main_table td:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.buttons_group {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  background: #ffffff;
+  padding: 4px 6px;
+}
+.button_hide {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.button_hide:hover {
+  background: rgb(255, 152, 0);
+  transform: scale(1.15);
+}
+
+.button_restore {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.button_restore:hover {
+  background: rgb(76, 175, 80);
+  transform: scale(1.15);
+}
+
+.button_hide_text {
+  background: none;
+  border: 1px solid #ff9800;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 13px;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.button_hide_text:hover {
+  background: #ff9800;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.content_main_table th {
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.content_main_table td {
+  font-size: 15px;
+  color: #444;
+}
+
+.content_main_table tr:last-child td {
+  border-bottom: none;
+}
+
+/* === Nút Sửa / Xóa === */
+.button_edit,
+.button_delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px; /* giảm kích thước */
+  font-size: 15px;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Căn giữa icon */
+  width: 28px;
+  height: 28px;
+}
+
+.button_edit:hover {
+  background: rgb(0, 128, 255);
+  transform: scale(1.15);
+}
+
+.button_delete:hover {
+  background: rgb(255, 0, 0);
+  transform: scale(1.15);
+}
+
+
+
+/* Overlay mờ toàn màn hình */
+.form_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Form container */
+.form_container {
+  background-color: #fff;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  position: relative;
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Header */
+/* Header */
+.form_container h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.form_container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.form_input_type {
+    display: flex;
+    justify-content: center; /* căn giữa */
+    gap: 10px;
+}
+
+.form_input_type button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4d83d3, #30abca);
+  color: #121222;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.form_input_type button:hover {
+  background: #48a2cc;
+}
+
+.form_inputs_ttnv, .form_inputs_tkdn {
+  margin-top: 15px;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form_input label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #272222;
+}
+
+.form_input input,
+.form_input select {
+  padding: 8px 10px;
+  border: 1px solid #48c1d1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form_input input:focus,
+.form_input select:focus {
+  border-color: #82d1f0;
+  box-shadow: 0 0 5px rgba(130,209,240,0.5);
+}
+
+/* Buttons dưới cùng */
+.form_buttons_type_nv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form_buttons_type_nv .button_add {
+  border-radius: 8px;
+  width: 80%;
+}
+
+.form_buttons_type_nv .button_add button {
+  background: linear-gradient(90deg, #395f99, #30abca);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s, transform 0.1s;
+}
+
+
+.form_buttons_type_nv .button_add button:hover {
+  background: #4bbadb;
+  transform: scale(1.03);
+  color: #000000;
+}
+
+
+.form_buttons_type_nv .button_cancel {
+  border-radius: 8px;
+  width: 20%;
+}
+
+.form_buttons_type_nv .button_cancel button {
+  background: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s, transform 0.1s;   
+  border: 1.5px solid #82d1f0;
+}
+
+
+.form_buttons_type_nv .button_cancel button:hover {
+  background: #b3daff;
+  transform: scale(1.03);
+  color: #ce0000;
+}
+
+/* Animation mở form */
+@keyframes slideDown {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

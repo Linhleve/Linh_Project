@@ -1,0 +1,24 @@
+<section class="title-bar">
+    <h1 class="title">Tạo hóa đơn</h1>
+</section>
+
+<section>
+
+    <label>
+        <span class="f20">Chọn sản phẩm:</span>
+        <select id="product-select" class="form-2">
+            <% san_pham.forEach((sanPham) => { %>
+                <option value="<%= sanPham.id_san_pham %>"><%= sanPham.ten_san_pham %> </option>
+            <% }); %>
+        </select>
+        <button class="button" onclick="themSanPham()">Thêm</button>
+    </label>
+
+    <div class="full-width container" id="products">
+
+    </div>
+    <br>
+    <div>
+        <button class="button" onclick="taoHoaDon()">Xác nhận</button>
+    </div>
+</section>

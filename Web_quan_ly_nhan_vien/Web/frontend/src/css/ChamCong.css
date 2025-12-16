@@ -1,0 +1,37 @@
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(222, 234, 250, 0.886); /* bảng mờ */
+  backdrop-filter: blur(6px); /* mờ nền */
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.attendance-table th {
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+}
+
+.attendance-table tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.attendance-card h3 {
+  margin-bottom: 5px; /* giảm khoảng cách xuống còn 4px */
+}
+
+.attendance-card p {
+  margin-top: 0; /* bỏ khoảng cách trên của <p> */
+  margin-bottom: 25px; /* khoảng cách dưới nếu muốn */
+  color: #6b7280; /* màu chữ nhạt giống placeholder */
+  font-size: 14px;
+}
+

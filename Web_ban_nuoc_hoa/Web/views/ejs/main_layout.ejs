@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLMM Perfume</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/chuyen_trang.js"></script>
+    <script src="/scripts/gioithieu.js"></script>
+    <script src="/scripts/load_du_lieu.js"></script>
+</head>
+<body>
+<header class="container header">
+    <div class="container full-width">
+        <div class="width10 mobile-hidden">
+            <a id="logo">NLMM</a>
+        </div>
+
+        <nav class="container width50">
+            <ul class="container full-width">
+                <li>
+                    <a href="/trang-chu" class="nav-text hover-red">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="/gioi-thieu" class="nav-text hover-red">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="/bo-suu-tap" onclick="LoadSanPham()" class="nav-text hover-red">Bộ sưu tập</a>
+                </li>
+                <li>
+                    <a href="/lien-he" class="nav-text hover-red">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="mobile-hidden header-search">
+                <form action="/search" method="get" class="form-1">
+                    <label class="label">
+                        <input class="search" name="query" placeholder="Tìm kiếm" type="search">
+                    </label>
+                </form>
+            </div>
+
+            <div class="">
+                <button onclick="changeURL('/tai-khoan/kiem-tra-trang-thai/gio-hang')" class="action-button" id="cart-button">
+                    <img class="icon" src="/images/shopping-bag.png" alt="shopping-cart">
+                </button>
+
+            </div>
+            <div class="">
+                <button onclick="changeURL('/tai-khoan/kiem-tra-trang-thai/trang-ca-nhan')" class="action-button" id="personal-button">
+                    <img class="icon" src="/images/user.png" alt="user">
+                </button>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="body">
+    <%- include(contentToInclude) %>
+</div>
+
+
+
+
+<footer class="container">
+    <p>&copy; 2025 NLMM Perfume. All rights reserved.</p>
+    <ul class="footer-links">
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản sử dụng</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

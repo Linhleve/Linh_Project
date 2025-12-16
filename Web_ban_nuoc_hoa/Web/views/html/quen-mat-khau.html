@@ -1,0 +1,23 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<section class="title-bar">
+  <h1 class="title">Quên Mật Khẩu</h1>
+</section>
+
+<div class="login-container">
+  <div class="login-left">
+    <form class="login-form" id="forgot-password-form">
+      <h1 class="login-title">Find Password</h1>
+      <p class="login-subtext">Nhập thông tin của bạn để nhận liên kết đặt lại mật khẩu:</p>
+      <label><input type="text" name="ten_tai_khoan" placeholder="Tên đăng nhập" class="login-input"></label>
+      <label><input type="text" name="recovery" placeholder="Email hoặc số điện thoại" class="login-input" required></label>
+
+      <button class="login-btn" type="submit">Tìm mật khẩu</button>
+
+    </form>
+  </div>
+  <div class="login-right">
+    <p class="f28">Đã nhớ mật khẩu?</p>
+    <p class="f20">Tuyệt vời! Quay lại trang đăng nhập để<br> tiếp tục hành trình cùng chúng tôi.</p>
+    <button onclick="changeURL('/dang-nhap')" class="signup-btn">ĐĂNG NHẬP</button>
+  </div>
+</div>

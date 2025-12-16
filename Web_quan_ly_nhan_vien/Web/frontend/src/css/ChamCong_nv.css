@@ -1,0 +1,252 @@
+/* Container tổng */
+.cham-cong-container {
+  max-width: 75%;
+  margin: 2rem auto;
+  margin-top: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header phần tiêu đề */
+.cham-cong-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.content_header h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.content_header p {
+  margin: 3px 0 0 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.content_header_button {
+  display: flex;
+  justify-content: flex-end; /* đẩy sát phải */
+  width: 20%;
+
+}
+
+.content_header_button button {
+  background: #0078FF;
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: 0.25s;
+}
+
+.content_header_button button:hover {
+  background: #0063CC;
+}
+
+/* Chọn ngày */
+.content_header_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  background: #f7fbff;
+  border: 1.5px solid #82d1f0;
+}
+
+
+.content_title h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.content_title p {
+  margin: 2px 0 0 0;
+  color: #777;
+  font-size: 16px;
+}
+
+.content_title_time {
+  display: flex;
+  justify-content: flex-end; /* đẩy sát phải */
+  width: 20%;
+}
+
+.content_title_time input {
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #82d1f0;
+}
+
+/* Bảng danh sách */
+
+.content_header_main {
+  display: flex;
+  flex-direction: column; /* giúp margin-top làm việc */
+  align-items: center;
+  padding: 20px 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+  background: #f7fbff;
+  border: 1.5px solid #82d1f0;
+}
+
+.main_detail_table {
+  margin-top: 30px;  /* giờ sẽ hoạt động 100% */
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #82d1f0;
+  overflow: hidden;
+}
+
+.main_detail_table table {
+  table-layout: fixed;  /* bắt buộc để cột đều nhau */
+  width: 100%;
+}
+
+.main_detail_table table thead {
+  background-color: #e8f2ff; /* màu nền header */
+}
+
+.main_detail_table th {      
+  text-align: left;         
+  font-weight: 500;
+  padding: 10px 10px; 
+  font-size: 14px;         
+}
+
+.main_detail_table th:last-child {
+  text-align: left;
+}
+
+.main_detail_table td {
+  text-align: left;         
+  padding: 10px 10px; 
+  font-size: 14px;;
+}
+
+.main_detail_table td:last-child {
+  text-align: left;
+}
+
+.main_detail_table tr:hover td {
+  background: #f9fcff;
+}
+
+
+
+/* Ghi chú */
+.content_header_note {
+  margin-top: 25px;
+  padding: 15px 20px;
+  background: #fff7e6;
+  border-left: 4px solid #FFA500;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.content_header_note h4 {
+  margin-left: 0px;
+}
+
+.content_header_note li {
+    margin-left: 30px;
+}
+
+/* Form checkin checkout */
+.content_check_inout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.button_exitform {
+  position: absolute;
+  top: 0px;  
+  right: 0px;
+  
+}
+
+.button_exitform button {
+  background:transparent;
+  font-size: 16px; 
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #777;
+  transition: 0.2s;
+  text-align: end;
+  margin: 0;
+  padding: 10px 15px;
+  outline: none;
+  box-shadow: none;
+}
+
+.button_exitform button:hover {
+  color: #ff4d4f; 
+}
+
+.header_wellcome h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header_time_now {
+  font-size: 40px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #0078FF;
+}
+
+.time_checkin, .time_checkout {
+  margin: 10px 0;
+  padding: 12px;
+  background: #f7fbff;
+  border-radius: 10px;
+  border: 1px solid #e0e7ef;
+}
+
+.time_checkin h4, .time_checkout h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.checkin_button button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.checkin_button button:hover {
+  background: #1f8b37;
+}
+
+/* Animation popup */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -45%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}

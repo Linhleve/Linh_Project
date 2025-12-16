@@ -1,0 +1,300 @@
+.content_container_cv {
+  background: #e8f7ff;
+  min-height: 100vh;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container_cv {
+  width: 80%;
+  margin-left: 150px;
+}
+
+.content_title {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #82d1f0;
+}
+
+.content_title_1 h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.content_title_1 p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.content_title_cv {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 36px;
+  margin: 0;
+}
+
+.content_title_cv button {
+  background: linear-gradient(90deg, #395f99, #30abca);
+  color: #fff;
+  display: flex;          
+  align-items: center;   
+  justify-content: center; 
+  margin: 0;
+  height: 36px;
+}
+
+.content_title_2 button:hover {
+  background: linear-gradient(90deg, #0066ff, #0056e0);
+  transform: translateY(-1px);
+}
+
+.content_main {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #82d1f0;
+}
+
+.content_main_table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.content_main_table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* tất cả cột đều nhau */
+}
+
+.content_main_table th,
+.content_main_table td {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid #82d1f0;
+}
+
+.content_main_table th:last-child,
+.content_main_table td:last-child {
+  text-align: right;
+}
+
+.content_main_table td:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.buttons_group {
+  display: flex;         
+  gap: 4px;                  
+  background: #ffffff;      
+  padding: 4px 6px;          
+  border-radius: 6px;       
+  align-items: center; 
+  justify-content: flex-end;
+}
+
+.content_main_table th {
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.content_main_table td {
+  font-size: 15px;
+  color: #444;
+}
+
+.content_main_table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Nút sửa/xóa */
+.button_edit,
+.button_delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.button_edit:hover {
+  background: rgb(0, 128, 255);
+  transform: scale(1.15);
+}
+
+.button_delete:hover {
+  background: rgb(255, 0, 0);
+  transform: scale(1.15);
+}
+
+
+
+
+
+
+/* Form  */
+/* === Lớp phủ mờ nền trang cha === */
+.form_overlay {
+  position: fixed;
+  inset: 0; /* phủ toàn màn hình */
+  background: rgba(0, 0, 0, 0.4); /* mờ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* nổi hơn nội dung chính */
+  animation: fadeIn 0.25s ease;
+}
+
+/* === Khung form === */
+.form_container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 32px;
+  min-width: 360px;
+  max-width: 400px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  animation: popup 0.3s ease;
+}
+
+/* Tiêu đề */
+.form_container h4 {
+  margin-bottom: 4px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.form_container p {
+  margin-top: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Ô nhập liệu */
+.form_input {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.form_input input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.form_input input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* === Nút thêm và hủy === */
+.form_buttons_cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* khoảng cách giữa 2 nút */
+  margin-top: 20px;
+}
+
+.form_buttons_cv .button_add {
+  border-radius: 8px;
+  border: none;
+  width: 80%;
+}
+
+/* === Nút Thêm mới === */
+.form_buttons_cv .button_add button {
+  background: linear-gradient(90deg, #395f99, #30abca);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s, transform 0.1s;
+}
+
+
+.form_buttons_cv .button_add button:hover {
+  background: #4bbadb;
+  transform: scale(1.03);
+  color: #000000;
+}
+
+.form_buttons_cv .button_cancel {
+  border-radius: 8px;
+  width: 20%;
+}
+
+.form_buttons_cv .button_cancel button {
+  background: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s, transform 0.1s;
+  border: 1.5px solid #82d1f0;
+}
+
+.form_buttons_cv .button_cancel button:hover {
+  background: #b3daff;
+  color: #ce0000;
+  transform: scale(1.03);
+}
+
+/* === Hiệu ứng hiện form === */
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hiệu ứng nền mờ hiện dần */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

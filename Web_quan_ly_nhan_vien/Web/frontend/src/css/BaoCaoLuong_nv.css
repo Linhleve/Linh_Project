@@ -1,0 +1,307 @@
+.salary-page {
+  padding: 20px;
+}
+
+/* ======= PHẦN ĐẦU TRANG ======= */
+
+.salary-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between; /* Year input left, export button right */
+  align-items: center;
+  gap: 12px;                 /* tạo khoảng cách đẹp */
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap;           /* cho responsive khi màn hình nhỏ */
+  padding: 12px 28px;       /* breathing room left/right to match screenshot */
+}
+
+/* Field */
+.field {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px; /* đảm bảo kích thước tối thiểu cho input */
+}
+
+.field label {
+  display: block;
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+
+}
+
+.field input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  width: 180px; /* cố định hợp lý cho layout */
+  background-color: #ffffff;
+  color: #222;
+  height: 36px;
+  box-sizing: border-box;
+  transition: border-color .12s ease, box-shadow .12s ease;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #1574e8;
+  box-shadow: 0 0 0 4px rgba(21,116,232,0.08);
+}
+
+/* Nút */
+.export-btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #12b35b; /* green like screenshot */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;        /* tránh % vì % làm to quá */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 0;
+  margin-left: auto; /* 👉 ĐẨY HẲN SANG PHẢI */
+  transition: background-color .12s ease, transform .06s ease;
+}
+
+/* small extra spacing from the right edge when placed inside a tight container */
+.export-btn {
+  margin-right: 8px;
+}
+
+.export-btn:hover {
+  background: #0fa14b;
+}
+
+.export-btn:active {
+  transform: translateY(1px);
+}
+
+/* Responsive: trên màn hình nhỏ, các field xếp dọc */
+@media (max-width: 600px) {
+  .filter-row {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .field {
+    min-width: 100%;
+  }
+  .field input {
+    width: 100%;
+  }
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Make the first field (usually Year) expand to the left like the screenshot */
+.filter-row .field:first-child {
+  flex: 1 1 60%;
+  min-width: 260px;
+}
+
+.filter-row .field:first-child input {
+  width: 100%;
+  max-width: none;
+  background: #f6fbff; /* subtle light background */
+  border: 1px solid #e2f0fb;
+  padding: 10px 14px;
+  height: 40px;
+  border-radius: 10px;
+  color: #0b5d7a; /* dark teal for input text like screenshot */
+}
+
+
+.employee-info-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: linear-gradient(180deg, #f6fbff 0%, #eef9ff 100%); /* light blue gradient */
+  padding: 14px 20px; /* match screenshot spacing */
+  border-radius: 10px;
+  margin-bottom: 18px;
+  width: calc(100% - 56px);
+  margin-left: 28px;
+  margin-right: 28px;
+  gap: 12px; /* slightly wider gap for readability */
+  box-shadow: 0 1px 6px rgba(11,93,122,0.06);
+  border: 1px solid #dfeffb;
+}
+
+.info-block .label {
+  font-size: 13px; /* label size per screenshot */
+  color: #2f6673;
+  font-weight: 500;
+}
+
+.info-block .value {
+  font-weight: 700;
+  margin-top: 4px;
+  font-size: 16px; /* slightly larger for emphasis */
+  color: #0b5d7a; /* blue/teal like screenshot */
+}
+
+@media (max-width: 900px) {
+  .employee-info-card {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-info-card {
+    grid-template-columns: 1fr;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.section-title {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sum-card {
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  color: #333;
+}
+
+.sum-card .title {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.green {
+  background: #e6f7ec;
+  color: #0a8f3c;
+}
+
+.blue {
+  background: #e6f4ff;
+  color: #1574e8;
+}
+
+.yellow {
+  background: #fff6df;
+  color: #e5a100;
+}
+
+/* ======= PHẦN BẢNG CHI TIẾT ======= */
+.bao-cao-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding:0;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden; /* để bo góc chung */
+}
+.salary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  table-layout: fixed; 
+}
+
+.salary-table th {
+  background: #f6f6f6;
+  text-align: left;
+  padding: 12px;
+  border-top:12px;
+}
+
+.salary-table td {
+  padding: 12px;
+  border-top: 1px solid #ececec;
+}
+.bao-cao-header {
+  background: #f0f9fc;
+  margin:0;
+  padding: 14px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: space-between; 
+  align-items: flex-start;
+}
+
+/* Ensure header can be a positioning context and layout with title on left */
+.bao-cao-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Make title block take available space */
+.bao-cao-header .title-block {
+  flex: 1 1 auto;
+}
+
+/* Position export button to the right, vertically centered with h1/h2 */
+.bao-cao-header .export-btn {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0; /* override other margins */
+}
+
+/* Responsive: on narrow screens put the button below the title */
+@media (max-width: 640px) {
+  .bao-cao-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 12px;
+  }
+  .bao-cao-header .export-btn {
+    position: static;
+    transform: none;
+    margin-top: 12px;
+    align-self: flex-end;
+    width: auto;
+  }
+}
+.bao-cao-body {
+  padding: 20px;  
+}
+.title-block h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.title-block h2 {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;}

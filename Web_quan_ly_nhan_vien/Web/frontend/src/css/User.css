@@ -1,0 +1,313 @@
+/* ===== Sidebar ===== */
+.user-page {
+  display: flex;
+  min-height: 100vh;       /* full màn hình */
+  font-family: Arial, sans-serif;
+  align-items: flex-start; /* sidebar đứng sát top */
+}
+
+.user-sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;           /* chiều cao full viewport */
+  background: linear-gradient(
+    to bottom,
+    #4f8beb 0%,
+    #0350f5 32%,
+    #f8f9f7 32%,
+    #f8f9f7 86%,
+    rgb(246, 233, 233) 86%,
+    rgb(246, 233, 233) 100%
+  );
+  color: #f0e8e8;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* luôn đứng sát trên */
+  position: sticky;             /* giữ sidebar cố định khi scroll */
+  top: 0;
+  box-shadow: 6px 0 26px rgba(7, 54, 86, 0.06);
+}
+
+.user-main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+
+/* Sidebar: User Info */
+
+
+/* Avatar riêng cho sidebar để tránh trùng với user card */
+.avatar-sidebar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #0749d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    flex-shrink: 0;   /* không bị co nhỏ */
+    flex-grow: 0;     /* không bị kéo dài */
+}
+
+
+/* Tên + thông tin user trong sidebar */
+.user-info .name-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.user-info .name-section .name {
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.user-info .name-section .role,
+.user-info .name-section .department {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Navigation links */
+.user-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-nav a {
+    padding: 12px 17px;
+    margin-bottom: -1.1cm;
+    margin-top: 1.3cm;
+    color: #0b0b0b;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.3s;
+}
+
+.user-nav a:hover,
+.user-nav a.active {
+    background: linear-gradient(to left, rgb(81, 81, 251),rgb(89, 131, 247));
+    color: #f0f6ff;
+}
+
+.logout-btn {
+    background: #ff4d4f;
+    border: none;
+    padding: 10px;
+    margin-bottom: -0.2cm;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #e04344;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: -0.2cm;
+}
+
+/* ===== User Main ===== */
+.user-main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* User Card */
+.user-card {
+    background: linear-gradient(to left, rgb(27, 119, 239), rgb(95, 158, 246));
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width:680px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color:#ffffff
+}
+.icon-company{
+    margin-top: 30px;
+}
+/* Avatar trong user card */
+.user-avatar-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e0f0ff;
+    color: #0066ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+     min-width: 60px;      /* bắt buộc giữ kích thước */
+    min-height: 60px;
+    flex-shrink: 0;  
+}
+
+/* User Details */
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-item {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: -0.1cm;
+}
+
+.detail-item .label {
+    font-weight: bold;
+    color:#f8f9f7;
+}
+
+.detail-item .value {
+    color: #fff5f5;
+}
+.user-page {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    background: #f0f6ff;
+    min-height: 100vh;
+    align-items: flex-start; /* <--- cực kỳ quan trọng */
+}
+/* Cụm avatar + tên + mã NV */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.sidebar-header {
+    margin-bottom: 20px; /* khoảng cách tới avatar */
+}
+
+.sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sidebar-subtitle {
+    font-size: 13.5px;
+    color: #eeeaea;
+    margin-top: 2px;
+}
+.user-cardh1 {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 680px;
+    min-height: 200px;
+    margin: 0 auto;
+    margin-top:1cm;
+
+
+}
+
+.stats-section h3 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Căn từng dòng thống kê */
+.stat-item {
+    margin-top:20px;
+    display: flex;
+    justify-content:space-between; /* 👈 ĐÂY LÀ CÁI QUAN TRỌNG */
+    align-items: center;
+    font-size: 15px;
+    padding: 8px 0;
+    color:#5f6262;
+    border-bottom: 1px dashed #e1e8f0;
+}
+
+.stat-item span:last-child {
+    font-weight: bold;
+    color: #080808;
+    text-align:right;
+}
+
+/* Tổng dự kiến */
+.stat-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 2px solid #e1e8f0;
+    color: #00a653;
+}
+.stat-total span:last-child{
+     text-align:right;
+}
+.two-small-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 680px;        /* bằng với card lớn */
+  margin: 20px auto 0;
+}
+
+.small-card-box {
+  width: 48%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.small-card-box h3 {
+  font-size: 15px;
+  margin: 0;
+  color: #444;
+}
+
+.small-card-box .value {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0 0;
+}
+.small-card-box svg {
+  width: 45px;
+  height: 45px;
+}
+
+.small-card-box > div:first-child {
+  width: 40px;
+  height: 40px;
+}
+

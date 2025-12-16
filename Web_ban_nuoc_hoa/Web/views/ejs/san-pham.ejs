@@ -1,0 +1,21 @@
+<section class="title-bar">
+    <h1 class="title"><%= san_pham.ten_san_pham %></h1>
+</section>
+
+<section>
+    <div class="content-container">
+        <div class="width20">
+            <img src="../images/products/<%=san_pham.id_san_pham%>.png" alt="<%= san_pham.ten_san_pham %>" class="product-image">
+        </div>
+        <div class="width50">
+            <h2 class="line f28"><%= san_pham.ten_san_pham %></h2>
+            <p class="line f20"><b>Thương hiệu:</b> <%= san_pham.thuong_hieu %></p>
+            <p class="line f20"><b>Giá:</b> <%= san_pham.gia_ban.toLocaleString() %> VNĐ</p>
+            <p class="line f20"><b>Dung tích:</b> <%= san_pham.dung_tich %>ml</p>
+            <p class="line f20"><b>Nước hoa:</b> <%= san_pham.phan_loai %> </p>
+            <p class="line f20"><b>Xuất sứ:</b> <%= san_pham.xuat_su %></p>
+            <p class="line f20"><b>Phong cách:</b> <%= san_pham.mo_ta %></p>
+            <button class="button f20" onclick="ThemVaoGioHang(<%=san_pham.id_san_pham%>)">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+</section>

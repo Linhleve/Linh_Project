@@ -1,0 +1,54 @@
+<section class="title-bar">
+    <h1 class="title">Quản lí dữ liệu</h1>
+</section>
+
+<section class="content-container">
+    <div class="left-bar">
+        <div class="scroll h40v">
+            <h2 class="f28">Bảng dữ liệu</h2>
+            <div class="card b-hover-yellow" onclick="sanPham.LayDuLieu()">
+                <p class="f20">Sản Phẩm</p>
+            </div>
+            <div class="card b-hover-yellow" onclick="taiKhoan.LayDuLieu()">
+                <p class="f20">Tài khoản</p>
+            </div>
+            <div class="card b-hover-yellow" onclick="nhapHang.LayDuLieu()">
+                <p class="f20">Nhập hàng</p>
+            </div>
+            <div class="card b-hover-yellow" onclick="hoaDon.LayDuLieu()">
+                <p class="f20">Hóa Đơn</p>
+            </div>
+            <div class="card b-hover-yellow" onclick="hoaDonChiTiet.LayDuLieu()">
+                <p class="f20">Hóa đơn chi tiết</p>
+            </div>
+            <div class="card b-hover-yellow" onclick="napTien.LayDuLieu()">
+                <p class="f20">Nạp tiền</p>
+            </div>
+            <div class="card b-hover-yellow" onclick="gioHang.LayDuLieu()">
+                <p class="f20">Giỏ hàng</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="right-bar">
+
+        <table class="table-1" id="manageTable">
+
+        </table>
+        <br><br>
+        <button id="addRow" class="button">Thêm mới</button>
+    </div>
+
+
+</section>
+
+<div id="dataForm" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Nhập thông tin</h2>
+        <form id="dataFormContent" class="">
+        </form>
+    </div>
+</div>
